@@ -308,7 +308,6 @@ export class NguiAutoCompleteDirective implements OnInit, OnChanges {
     (val !== this.ngModel) && this.ngModelChange.emit(val);
     this.valueChanged.emit(val);
     this.hideAutoCompleteDropdown();
-    setTimeout( () => this.inputEl && this.inputEl.focus());
   };
 
   selectCustomValue = (text: string) => {

@@ -649,7 +649,6 @@ var NguiAutoCompleteDirective = (function () {
             (val !== _this.ngModel) && _this.ngModelChange.emit(val);
             _this.valueChanged.emit(val);
             _this.hideAutoCompleteDropdown();
-            setTimeout(function () { return _this.inputEl && _this.inputEl.focus(); });
         };
         this.selectCustomValue = function (text) {
             _this.customSelected.emit(text);
